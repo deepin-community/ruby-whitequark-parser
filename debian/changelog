@@ -1,0 +1,95 @@
+ruby-whitequark-parser (3.0.2.0-3) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>  Wed, 20 Jul 2022 17:47:48 +0800
+
+ruby-whitequark-parser (3.0.2.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * d/control: Add Breaks against rubocop << 0.89.1+dfsg-2~ as well.
+
+ -- Daniel Leidert <dleidert@debian.org>  Thu, 09 Dec 2021 08:15:21 +0100
+
+ruby-whitequark-parser (3.0.2.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * d/control: Add Breaks against ruby-rubocop-ast << 0.5.0.
+
+ -- Daniel Leidert <dleidert@debian.org>  Wed, 08 Dec 2021 12:18:50 +0100
+
+ruby-whitequark-parser (3.0.2.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+    - Adds Ruby 3.0 support (closes: #996524).
+  * d/control (Standards-Version): Bump to 4.6.0.
+    (Build-Depends): Add racc, ragel, and ruby-cliver to create the lexers.
+    (Depends): Handle dependencies with ${ruby:Depends}.
+    (Description): Update text.
+  * d/copyright (Copyright): Add team.
+  * d/rules: Add target to create the lexers running the generate task and
+    clean them too. Install upstream changelog.
+  * d/watch: Update file and use github sources.
+  * d/patches/git-in-gemspec.patch: Remove obsolete patch.
+  * d/patches/series: Remove empty file.
+  * d/upstream/metadata: Update Changeog URL.
+
+ -- Daniel Leidert <dleidert@debian.org>  Wed, 24 Nov 2021 00:00:24 +0100
+
+ruby-whitequark-parser (2.7.1.4-2) unstable; urgency=medium
+
+  * Tighten dependency on ruby-ast
+
+ -- Utkarsh Gupta <utkarsh@debian.org>  Tue, 30 Jun 2020 03:54:25 +0530
+
+ruby-whitequark-parser (2.7.1.4-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set field Upstream-Contact in debian/copyright.
+  * Remove obsolete field Contact from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+
+  [ Utkarsh Gupta ]
+  * New upstream version 2.7.1.4
+  * Add myself as an uploader
+  * Bump debhelper-compat to 13
+  * Refresh d/patches
+
+ -- Utkarsh Gupta <utkarsh@debian.org>  Tue, 30 Jun 2020 03:37:15 +0530
+
+ruby-whitequark-parser (2.7.0.2-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Miguel Landaeta ]
+  * Update Vcs-* fields to use salsa.debian.org URLs.
+
+  [ Utkarsh Gupta ]
+  * Add salsa-ci.yml
+
+  [ Balasankar C ]
+  * New upstream release, with support for Ruby 2.7
+  * Bump Standards-Version to 4.5.0
+  * Bump DH compat level to 12
+  * Add upstream metadata file
+
+ -- Balasankar C <balasankarc@debian.org>  Thu, 06 Feb 2020 20:34:19 +0530
+
+ruby-whitequark-parser (2.4.0.2-1) unstable; urgency=medium
+
+  * New upstream release:
+    - Fix FTBFS bug with Ruby 2.5. (Closes: #888174)
+  * Bump Standards-Version to 4.1.3. No changes were required.
+  * Bump DH compat level to 11.
+  * Update copyright dates.
+  * Set Rules-Requires-Root: no.
+  * Update package description.
+
+ -- Miguel Landaeta <nomadium@debian.org>  Thu, 08 Feb 2018 20:31:19 +0000
+
+ruby-whitequark-parser (2.3.3.1-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #849497)
+
+ -- Miguel Landaeta <nomadium@debian.org>  Thu, 29 Dec 2016 16:23:34 +0000
